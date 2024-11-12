@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TELE2</title>
+        <link rel="icon" href="/assets/favicon-DUgnZgYG.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header class="header">
+        
+            <div class="header__logo">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAhCAYAAABduGw9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM+SURBVHgB7ZmNddowFIUfPQxAJ6g6QdIJSiZoMkFggqYTlEyQdoI4E5RMAEwQOkHFBGEDem95io1jSZjaweb4O+dibMuyfK2fJ7knHVE2m80QG2oODaBfemoNWWgJPfR6vbl07A+NhWablGtotPFzDxnp+Geegc495wZQUmDgdcRg8idrcl9OGH1QmvgBMqpz3ZIEGueuYRcw03SHYHg98vmELmPdaoPVDCpr4gAPNmZNktTIMkzkcHMdBrqDxq01GAbyAW4KTlk5EDZ/bL5KNbAr+dYIg7UmGmiN2mf3vGwg1VOVuY7rd/JG6MBh9P+5jrhP0DMOUU/QZzkSOuCFugaGZCvZhmpD2fbfMUylNVhrIrmEziTtH43+n0MXemwkzSL0ci10kWld3C7wvDT9JnDdoLTBrIW8kdZGNiluaRgNnPLG0L00E5sRzVlkzg0D1008XRevDxlcHEVEwhsLfdQChTI/Nq5sbNbPMGgVSW8C5x49x9cSxvZhpquFVDZGbDUw9LHkJcZznAOvz8gzCbNkDf4hHcQXlYRqabAF48Us6gzT3EKIld1FkaZjJS2v274CLZ/mmkA+CX/qMJgD3TTQrI5Cdn3AM2C937fMmtf3SLKEP0UGW9m+uaXsvsnfssdg0RRjGWfLdiB202nHSApqZUlzZxKe6CTsHvinrzd8MQ8ZMIZ9mdezkDh+Je1jKBUP2BlzTSTprfvTh3kPuZN3uQys/F+B+JJs07qMspQwdydmrnyqzBbA6S8XRrHLFS1OgWPhTKMpYe4c5t5mD9SxFpHv81pNCXOt5NaWyZst9rSRkuZeFEUnp/xFgwO3lXQMWUsaDUUpYS7zvPIts56swXjgSzkQXbrkl2OzR/Ix7uWdQNVhMAe2RNKaw21soaUxqLmxONcxgrnTUILKDdYAeyEtRD8ZMUylua5LceT3k4IQ9xUn/VW5LDAskdyXisyH1Tz87D/M7Bema43BmbWE9T6TFp2R5uNvk9tfIa+JGsWpdeUhZuUGqxFfZLegruBLPNDPyPVsojTHeJIkUhBvFpCfkfrycsTSHkQdNXgo/jXmORQ0WLYvwsiJ0E00aqYzuGY6g2umM7hm/gIH3q47h0uUOgAAAABJRU5ErkJggg==" alt="logo">
+            </div>
+
+            <div class="header__city">
+                <img class="header__icon " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAZCAYAAAA8CX6UAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFiSURBVHgBnVQLccMwDHWKwBAyBmFQj8EYdBDKIGWQMTCEQPCGIGXgMugYeNb2vOoUOXWrO92l0vPz06c2RrGUksvus8d0swUxZ+5ZBvXZAw5e8e3hgZHSd18jGXCYfMxuFYzNfgQm0hlNSYT3pk15BGHPE6GVRJD9ll8CDnUflDJOuCSgJCswI846g0ZeK9LLtBZ8R06Gy0iVNwDNgmgBYM9iR5B5gZ3pAoPkJNSsDiDnFfUTgXdmbUX6p5K7UD4pq7FDchBgMqcQUezSdd03i9HZ87800cQSO2FRqdwPxEaGu7WBjZ8DLPohbeLy8u93xIcOgQCJL1w2puayU+ycc1+CKKLU1xJYqbpnTM1BJgJ2xzaQlIUNWtJpfagQeWD7GqBMy5ltNX+T2gCV/06slZhan5sMeKuViL1aN3iDbJYlNpWkEFlWgk0PvqCSrEzRsyntzTPGpvjQstbIQhIPn2Y/x6CaZIBDoZMAAAAASUVORK5CYII=" alt="location icons">
+                <p class="header__text">Санкт-Петербург</p>
+            </div>
+            <div class="modal" id="cityModal">
+                <div class="modal__content">
+                    <h2>Выберите город</h2>
+                    <ul class="modal__city-list">
+                        <li class="modal__city-item" data-city="Москва">Москва</li>
+                        <li class="modal__city-item" data-city="Санкт-Петербург">Санкт-Петербург</li>
+                        <li class="modal__city-item" data-city="Новосибирск">Новосибирск</li>
+                    </ul>
+                </div>
+            </div>
+
+    </header>
+
+    <main class="main">
+        <section class="promo">
+            <div class="promo__text">
+                <p class="promo__promotion">Акция продлится с 1 по 20 сентября</p>
+                <img class="promo__icon" src="/assets/benefit-C8-0iYHc.png" alt="">
+                <p class="promo__rate">Тариф «Мой онлайн+» и 1 ТБ трафика в подарок для новых абонентов</p>
+                <button class="promo__button">Принять участие</button>
+            </div>
+            
+            <!-- Модальное окно -->
+            <div class="modal2" id="promoModal">
+                <div class="modal__content2">
+
+                    <form id="promoForm2">
+                        <label class="promo-code-form__label" for="phone" style="color: white;">Номер телефона</label>
+                        <input class="promo-code-form__input" type="text" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        <div class="promo-code-form__checkbox-container">
+                            <input class="promo-code-form__checkbox" type="checkbox" id="agreement" required>
+                            <label class="promo-code-form__checkbox-label" for="agreement">Даю согласие на обработку персональных данных. Условия соглашения.</label>
+                        </div>
+                        <button class="promo-code-form__button" type="submit">Выслать промокод</button>
+                        <p class="form-message2"></p>
+                    </form>
+                </div>
+            </div>
+            
+            <aside class="promo__boss">
+                <img class="promo__icon-boss" src="/assets/Boss-7czI8qsm.png" alt="">
+            </aside>
+        </section>
+
+        <section class="step">
+            
+            <div class="step__text">
+                <h1 class="step__title">Один терабайт — много любимых развлечений</h1>    
+                <p class="step__present">Подарок получают только новые абоненты при подключении услуг Tele2 с тарифом «Мой онлайн+». Трафик расходуется в течение года. </p>
+            </div>
+            
+            <div class="step__content">
+                <div class="step__icon step__icon--youtube">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAaJSURBVHgB7ZxfbFNVHMe/97RrNwfJ4AGjiLmLAV9M3BJJNhLlThJEs8F8cj5txJDoi+ydB7YHMD65+aAPYtiekCcHm8aQIHeSSBdImBEThRBvFH3gQUagbuvae/z97m1r27Vb2527e9vySbp27e3u+u3v3/ndc46GTcQw+tviSOgC4f0CUod763Bf1fT8o6WlAQsS2gK9Nm9Do9/tn2LmjIlNRIPHsCiLsAcF7H46HYkh27BxTAkxAYjZmDllwUM8EShfFBjwFkesmHlxEh6gVCAWJoHkMLnFcUWWUgHsgnLSRnhCpVUpEchfYQpxhfrRnBmBAjYsUJfRa2jQzroBN0holg0Mz5nTF7ABqhYobTUjEjiOQKONRfFo1DTNBVRBVQJ1Gf26htSV4FlNKTRLItRTTWwSqBDXpVI3a0ccRtIXmrzZbbzZX+EbEark4G6jb5hM7hw9bEbtQf+zGNip7374l3UnVu6byhZon9E7QncfocahhHLoeX2P9qd12yzn+LIEYstBHYiTg1GuJa0bpLuNXvbbr1GHUAbuWW9st6ZA6Wx10//izzNoMBzuXCu7lcxiXOekU3m9isM4n9EwjJKfsaRAXATWViqvFqkvY+vJUq8WdbF6jjulKBWPSliQ9gkaDB5PFnO1VQK59U4juFYhUl/CllXjyjwXq70xlnIWonjcnjuwzbMggeRQA4vDtBVaUZ5A1PAaRINDLjWcG4uyAnUZfUMNbj0ZqJ++JWso4cwDalMqs57wCy8hevBdhHa2Q2tuhdck795C4sZlrFz/Hiogq+EyZ5wfO0HaDc7J36GAZhImenAAfrB86SssXToHFVCw3sbBOm1BKQMKiOx9PSsO/6OJH6Yhl+LwErbQyN4DaD7ynnPu5N2fHYvaKGk3G3dikCr3anrlgPvHL5xxvk2vxWH4HMtXL2Yth11bBWk3ywZpAwrg2MOs3FATCyohcXXauQ892w5FdHA2E9xjhmLkoveWU+qcWouypNAWx1O6oMu2L+MJRREQ+8PC59on+uphNFFwT96aU5aBVMHaiP+nn/gDZx8O6tq2Hdh64gtHrKBgQ9PDVAi1SfhLitLyIt1CFOSfeuc4IpQNF8+Pw/7nPvyELKiDYlBwWqos1KPTx6givozW90+hZeBDiO074Cdi9cwu/0lQmRD//ISTmVo/OEVxqg/+oOkVX3reLOwH97F04UvEPztBcemAb7EpsAJlybT0fAqUYQQULvi4BIiQe3H696M6Z8I8mzRocYiFib4xgAQF60enjm3KmK440gqUBWX6SOxP8bOnnazmM9zuEPN+dhI5U7EwkdcOI/RMOwXmM1j5ZQ5BgOdoswVZ8BFui3A1vUJDjcVz4z6602qoDTQf5hnsAv7V0tzL4VsQcbQJQcziCUURmjYvIo6LaVXNAC3Eg55M2XhxzmtXpmeFaU6ROHIeCkj97fb9Iz4MDSLpdi/3pFVAQcfke6eStiGmoIDldD/HubJBIm2GJfE5+Hwc6JnEdVUFpZxw/j7/4MlSy0g+gAL4ykKzosZ5pXDFzVlRBRLJ9pj5neVM4rSsX5d26XsMeqhjg3BxJ6mPw9+s2P40vIbjXuqP3/Dv+U+VDUfYvWLmt86Fw2wlzW4mYBtQALcrEj6NndTguheTHc23QEyqyma1jbRi5jfZtWdZgTibUXdxDA0ODS8mcn/P6wc1Izze2FbEnY1k3srFPIEa3YrYejhz5T63qqPoWpG00HBw7JkZLXx2lUCuFWlH0WDQyH242PNFF7Pcs25bu/QX+XJQFxoCOXYtXfcUUrJpH0VotDFcTVpRxEdLvbrOYpZDuoamOl/MkuwsDMy5rHnZh99IWe1t1C2po2uJw6y7oM6NR7sfkrEdQh3BS8ZpvLXubg1lrTi8Z92JPafvYX80UAfQYHRkzpz5uJxjy16zSpY0Ww+W5G42UJ44TMXr5t2lUs5OC7UWuBegaf3cRq3kTVVuLMDZLXQliDNDiiMp2aR61gvIxahq8gKfKIqmTt72AYFHjlGd01mNOMyGNzfZZ/QdkbDHgmdNVORqYqhSlypE2f5BXUbvSRrPDAVAKCr+MNaMx+PVbmiSi9INljg2URd30CehlAqTwbM9zLqMt4YoxA16XTtJZ4suTLXg8aRKYTJ4vsmba1XCUCgWW8q8l6Lk4rlAhXT39O23pezgSdrUd+rgachuTaXp+UdmOgk8Pce2bGdHqfBsKxYsr0XJ5T8yXZVB4jPcHwAAAABJRU5ErkJggg==" alt="">
+                    <p>Около 500 часов видео</p>
+                </div>
+                <div class="step__icon step__icon--music">
+                    <img src="data:image/png;base64,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" alt="">
+                    <p>Примерно 200 000 песен</p>
+                </div>
+                <div class="step__icon step__icon--cam">
+                    <img src="data:image/png;base64,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" alt="">
+                    <p>Порядка 300 000 фото</p>
+                </div>
+            </div>
+        
+        </section>
+
+        <section class="process">
+
+                <div class="process__form">
+                    <div class="process__text">
+                        <h1 class="process__text-title">Несколько шагов <span class="process__text-highlight"> и 1ТБ - ваш</span></h1>
+                    </div>
+                    <section class="promo-code-form">
+                        <label for="phone" class="promo-code-form__label">Номер телефона</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" class="promo-code-form__input" required>
+                    
+                        <div class="promo-code-form__checkbox-container">
+                            <input type="checkbox" id="agree" name="agree" class="promo-code-form__checkbox" required>
+                            <label for="agree" class="promo-code-form__checkbox-label">
+                                Даю согласие на обработку персональных данных. 
+                                <a href="#" class="promo-code-form__link">Условия соглашения.</a>
+                            </label>
+                        </div>
+                    
+                        <button type="submit" class="promo-code-form__button">Выслать промокод</button>
+                    </section>
+                </div>
+
+                <aside class="process__number">
+
+                    <div class="process__step process__step--one">
+                        <img src="data:image/png;base64,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" alt="">
+                        <p class="step__title--text">Ведите свой номер телефона, затем дождитесь смс с промокодом для получения Тб</p>
+                    </div>
+
+                    <div class="process__step process__step--two">
+                        <img src="data:image/png;base64,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" alt="">
+                        <p class="step__title--text">Перейдите на сайт Tele2 и активируйте промокод при подключении на тариф «Мой Онлайн+»</p>
+                    </div>
+
+                    <div class="process__step process__step--three">
+                        <img src="data:image/png;base64,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" alt="">
+                        <p class="step__title--text">Используйте свой подарочный ТБ от Tele2 в течение всего года</p>
+                    </div>
+
+                </aside>
+           
+        </section>
+
+        <section class="info">
+
+            <div class="info__text">
+                <h1 class="info__text-welcome">Заходите на сайт Tele2</h1>
+                <p class="info__title">Перейдите в магазин, оформите тариф «Мой онлайн+» и на страничке активации введите ваш промокод. Готово! </p>
+                <button class="info__button"><a href="https://rostov.t2.ru/">Оформить тариф</a></button>
+            </div>
+            
+            <aside class="info__icon">
+                <img class="info__icon-1tb" src="/assets/1tb--XExwlAm.png" alt="">
+            </aside>
+        
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__social">
+            <div class="footer__icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAASCAYAAACuLnWgAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEKSURBVHgBrZSBFcEwEIYTExghIzABJmADNmADNvBMEBuwQZmADcIEbPC7e0krSpO08r33t6/tJf/l7vWE6AiAMUmTDCx839Rilv7Dph4QMVigmS1v7kzX/iLjBfQjBgppaGc2Kxc+vI+GNA+YLJGO4TU9t/bq7aNIewoo2OzHyZRIZ8IX6bIb0O0SCD65RG4kPv5YxLlKKYfVE9eNtEJeDh+WeDc+J1Vfy57sRH7OX2/IeY186EZr2H8gR29UyETj//7oYBFh59ED3TGITAy/ZAXaYxAqU4PZrMWp0g0ocAA7mwqkc0CsRC5jjfYUpFFK8tIzU8LOpKmwQ5BVZvh04vl1Ih1pLt1FIi+/fqLOlFTpIQAAAABJRU5ErkJggg==" alt="">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAQCAYAAADnEwSWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD8SURBVHgBrVRREYMwDC1TMAlIwAFIwAE4AAfDAXPAHGwOuCmYhOIACVl646PrvSa53d5dD9q85r2UUEdEnr4R5mcXgectYdwdAK9PgNuFwA4CQ7K5zPBWIFQSRn3i+AOYa+NJURQbP67Ohh6sbZzjGZw0GSdN4rjVKpOqiknekKgxcBbAWVxCGkipThPj9x7EPY8yFTuTUp0kRp/jQ/s7h0D59p4Esf3Y50FscRKCU8IYKW8mh0oTy/1Pv0Cu7BAc6X8wCd6MyTyPmsdF4MyaWOjOF+mIu7Ui3CgBk6XC2Sp28KVv3lgEe8ExuogrMl7amugaJQrPOcNFR+rfzCQ36m9fh4UAAAAASUVORK5CYII=" alt="">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAcCAYAAABRVo5BAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC/SURBVHgB7VTBDcIwDHRQB2AERmAENoANYAUmoBswAiuwQTsCnaBhArKBOUs8EtdRSkE8UE86Vb76EjuKQ5QBM6/AM9hzCom3OdMBfHAe+8raCZ8LFbAwtBONQGVoO0PzYBvF9+Qvylwa/fSiU6HUQQJwc86FktFCsMQxRvqq0aHxJoqlx7XK8ZSeaEDPR+L30UwtNUw1+o+McuU2kSiHc1WJLVhHcTdY6jWDGuak/P4CzMb/MOrnUUamVlpnGZ+5Xb1QwmON6gAAAABJRU5ErkJggg==" alt="">
+            </div>
+            <div class="footer__conditions">
+                <p class="footer__promotion">Полные условия акции</p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAImSURBVHgBxVfrccIwDFY4/tcb1COwAYzABtAJGKHXCcIGphPQThA6Ae0EyQawgSrH8kUkMYlD0n53Su5sPaxHZCWBnkBERa810ZJoQaSJFG9fiQqib6IT0WeSJFcYA2RYE6VEF4yDsbIwFNZjon1NaUa0I1pwRCTvkveymkwqeWO8zod6w/JGyOe95dm7XAguYCBqjnTrqgmY6NC167TpOXZGghm98SOMDNJ5EIdQbQz7uwyPH0A6mNY3tSgYDROB66tpB6uKNTAxhK3UL6hHvOfo6Uh+i0uZanpseSELCKyw6oRGrK+JzuLwvQsXq2a1mYPr7RYfAX5rVEHV94E9tgYLoj2/Y2BtrUoSXiyh/bRbUTyG10xXythLE9jz+s4zcLeaxU8bM91qB3C3nYTtaAWRP8gZ4+qn4LcGn8B73KJwfAQ8jIhGznsZNvHaorPEHIajoOi8sLJyVkDX69/BzQRbcJGz+f4KKZkzk/0UVcQQUQTWnzhl5dfDh3yrM2HVaa8zkPnoj4Pl589zB25Sssakp9bzU0De34qFrOhdgLmtBuQNV+YfI65tdIOL04cdjahDkT3IM0RCFOrGK/HznoaJgbcXn/KLqQzxxAcwDVu1Uw0ewXoYD1/7Igo5/vVA0sIweirwdi5UISY5lB5xvKH0IIzrLoH6WK5hIHDoiI//+WMilChRmB4Zui62wuav2QLH+jXr8KYPLmxYd+lPoCdwot/zX8+iVEf2rw5tAAAAAElFTkSuQmCC" alt="">
+            </div>
+        </div>
+        <div class="footer__info">
+            <div class="footer__logo">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAAeCAYAAABt5kPUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALtSURBVHgB7ZnxddowEMY/9/F/sgHOBGGDkgnaTACdoHSCkAkwE1AmKJkg7gZkA3WCmgnoHb7DjiIJA64fBn7v3ZMsy5b9+aST5AhXsF6vbykZkEVkS7JfZFyWyTHbNIoigys5LBrZbF3A+f7az7h8fQdniHgSW4+sSzYnr8msOnzuVepV5YmuA91rzAetFU8EYjj9glwoFSy2qi+Qd0G9ls/vK5zCAmYkYNIK8eRlXQKNyf6QJdiPQ4VTWMCfbfG8PvYXyAm99AgfPXNfNt7emHjSzb6S3SD3HLYluf83NMv3HecN8m7u6v5lerWJJ+LE0mhZIB4fHpALN7Muy9AgHEnhFySh5/wh+Ud5H+7ePU/924PEoxuzEPcoxEqRCzF2VDdonkzMiK2k/N5T35SE28DRmcc1BIaLD+JZHtQt5TldSDeb4P0XXKJhL7LaHkr7HDyMPS0pEXvKF57yFfyYDon1hPcCHROFGoeE0hVAFWJPuU/sz/CzZM8b43Ko7BgyPeoHqrzVGW356+lk1Ijp2vBU0OFFn1Hzvx11tUe64OHLVBFPG+CGU18lutmUkikapjRGs3H+RtK5vZC3g0LgniPk46iPTRBh8QyKL2JQfJGVNJjitOHIP3OUpzgg0stMYhKowl638dQOZe5KF/ZRbMcoES4E2SyY7ai29V5Xtz0o2orwAzmMkU8Zml49HEzFXZZReSioM2BwWB+WjlO0hIrCJTKub/mEC6eicBwTnu3Cc9gM/YvCy42kutoIQsINkQeHkHCG7NG1amm9ePRSL5S8YE9EuF3BwZA9+P5d1Ckeh2+eH+kXesOJIvO4yY5qBgHhmNrEk/lgihNH5nG8K62rISWzjue7/pad5Q+gMrxGVRFkOsXMHVW71vFA1rc227L/Kp42HvqC1gJcl1YK558RbsNeEcSuNugZOIC8okbq3Enm7e3EccqQ3QUu7SM8cCcIo2vbxqlznteqfcA6uPhJ8jFcxTuCq3hH8A/qoDxF8LTfxQAAAABJRU5ErkJggg==" alt="">
+                <p class="footer__text">© Tele2 Россия, 2021</p>
+            </div>
+            <div class="footer__logo">
+                <p class="footer__text">Сделано в Студии Олега Чулакова</p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAAAQCAYAAADEZJcGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQ+SURBVHgB5VqBUeMwEFSYLyAd4A4eKsCpIKECQgVABc5XEKjA/goCFdhU8OnA/grCV6C/S2RGWd9Zsic/P8DOiETS3ul0Ouskh4kBWGsX9HFH5YLK1DU3VLZUnieTyU+jgGRZbuE1bYn/ABzWuQHRB+Jtgbd2NrR4Jc4KODf0sfTbiDMbM14MSBfrmQpd16TvrUcO/fJG/Gvg4Hwb4twq+lL6mDudSavTuDWi8kKyjSAn+YK5jwKXbVmr9hAhoVLaMGrmGnkiOXBLgZMIOq8EXgmcXOBkqGjseCGwA62ONCCbA7+G/hX076zu40cbh5UiX+JYCm8NvL3/z1xnQh+8uKkJY8+1h2j9SrgZ2dcLe3iSM2i+V3YIXqM7E4dMCZoK6lMl4LGt4D9nrsKGJEBoqDy60kAfc2MN/yxYjOxT4R5UTBErKe27xU+hmdMQrw/3PZsuOGjuoU06UlwJdmF6fG07l8J2tkEF9pCKrLatOl4OnE+Rkmw3HW0EnWmPfG4F3wlzLBV5aQ61hbTl7NwBbyfoK/vGtd2YePc97zBzwcajg6rbHjGCeRJfJS1hgPFTXUHb3AyA7e4YDZVbhS7pXmLacgd5PMBKKaeCegprieMV7RcOmBSVSfmTbzuTLtSbgWdI7RdzSH8fDUu/4rbnqo8TAC8Onltmkt8dMOW9vaeILqT271CX0pIfJKn3vfHH4oD517tEIpQPA9vN55X7xIXRDo8S0OdFT7BIaAb2HY3nxkJeyn/cHHx+5ZPOTBehXeOrIYV6wX/I6ZXp+mpQWvKwDATbNFAfgwLq7S6Gczg6inwzh0hLvLbEKMBDVsRTwf0VtE3NyFvFfwJemSfe4vKZIfX6eF4PJow20PyFz0nvpZLmG3O8y/UFTNIzng9th8QXjC9HLCu/rOsYxMoEHl7H8r7Tt+OMvSVtBA7eVuqx40lQZENIBT052kllIcjmih1ZzDjKWOp8bffmm4fs4ZQk3d9zUCwd0kzPwesU2EKdAzYxxzZdAKcxp0VqhiMqGMl37He80XBquhfokp9zK1yrTffw3fSsUwF13Pm7scGOt927e/sUrF3ZxTwN9rQ7TKrYlLnyS+i/iRyPZUuhnINsKYyPZRcx5xz1eL6voU/8WcDK735qpztT+hnqW2gr+/jdDjNS0CqGJhGOGR0wyoL12qToGJJWzj25qdAvpeqsT4/ilzrge8lvUnCFkJkAenSK6XF/S3Infv71tDFhMGc28Bo4FmzTNoLXUJmZ0wK350o5kL5GyKpwvsfUxEG0Bh6PzXMsTBjM5d+jfkRwC6VdOqrsb0mtQUx4JkOX5nAzGPzvDYTf5vhWpC12BXXxKu+cdOlsmjubEs+mxtn0ZPpRmTj88b4nIPek2FiRfRU0406EfmmgnxcWz2P8mj/xH0z3/ZbaC3M4q1x4cu2/N1Rsa8RL1RbSS8i2vYO/NgHUu9xSUdAAAAAASUVORK5CYII=" alt="">
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+<script>
+$('.scroll-top').on('click', function() {
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+});
+</script>
+
+<!-- Модальное окно для формы -->
+<div class="modal" id="promoModal">
+    <div class="modal__content">
+        <span class="modal__close">&times;</span>
+        <h2>Введите номер телефона</h2>
+        <form id="promoForm">
+            <label for="phone">Номер телефона</label>
+            <input type="text" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+            <div class="agreement">
+                <input type="checkbox" id="agreement" required>
+                <label for="agreement">Даю согласие на обработку персональных данных.</label>
+            </div>
+            <button type="submit">Выслать промокод</button>
+            <p class="form-message"></p>
+        </form>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</body>
+</html>
